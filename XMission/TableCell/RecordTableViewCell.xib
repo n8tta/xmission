@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordTableViewCell" id="KGk-i7-Jjw" customClass="RecordTableViewCell" customModule="HW_11_SpaceGame_SpriteKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lap-11-4xn">
+                        <rect key="frame" x="40" y="11.5" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="o4S-l9-GMF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ScoreLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPe-bW-cLu">
+                        <rect key="frame" x="270" y="11.5" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IPe-bW-cLu" firstAttribute="leading" secondItem="lap-11-4xn" secondAttribute="trailing" constant="30" id="IbK-cQ-2Jw"/>
+                    <constraint firstItem="lap-11-4xn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="PAA-IU-jU5"/>
+                    <constraint firstItem="IPe-bW-cLu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ewB-ua-AMe"/>
+                    <constraint firstAttribute="trailing" secondItem="IPe-bW-cLu" secondAttribute="trailing" constant="15" id="roP-3b-saK"/>
+                    <constraint firstItem="lap-11-4xn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ua6-pp-vO2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="lap-11-4xn" id="EeY-Gh-Pzz"/>
+                <outlet property="scoreLabel" destination="IPe-bW-cLu" id="nhJ-2Y-HzO"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="10"/>
+        </tableViewCell>
+    </objects>
+</document>
